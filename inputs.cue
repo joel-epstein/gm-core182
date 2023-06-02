@@ -267,9 +267,9 @@ defaults: {
 
 	core_internal_tls_certs: {
 		// enable enables internal sideacr TLS (requires defaults.edge.enable_tls=true)
-		enable: bool | *defaults.edge.enable_tls @tag(internal_enable_tls,type=bool)
+		enable: bool | false @tag(internal_enable_tls,type=bool)
 		// require_client_certs enables internal mTLS (requires: defaults.edge.enable_tls=true and defaults.core_internal_tls_certs.enable=true)
-		require_client_certs: bool | *defaults.edge.require_client_certs @tag(internal_require_client_certs, type=bool)
+		require_client_certs: bool | false @tag(internal_require_client_certs, type=bool)
 		// cert_secret is the name of the Kubernetes secret to be mounted.
 		// By default the same secret for external TLS/mTLS will be used for internal TLS/mTLS.
 		// Different certs can be used by specifying a different secret name.
