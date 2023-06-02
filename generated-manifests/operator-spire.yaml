@@ -596,7 +596,7 @@ spec:
       containers:
       - args:
         - -repo
-        - git@github.com:<your-org>/greymatter-core.git
+        - git@github.com:joel-epstein/gm-core182.git
         - -sshPrivateKeyPath
         - /app/.ssh/ssh-private-key
         - -branch
