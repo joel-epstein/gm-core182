@@ -187,7 +187,7 @@ defaults: {
 		// that edge.enable_tls is also true. This config also enables internal
 		// mTLS across sidecars. That behavior can be changed by setting the
 		// defaults.internal.core_internal_tls_certs.require_client_certs to true.
-		require_client_certs: bool | *false @tag(edge_require_client_certs, type=bool)
+		require_client_certs: bool | *true @tag(edge_require_client_certs, type=bool)
 		secret_name:          "gm-edge-ingress-certs"
 		annotations:{
 			// Additional annotations for the core edge service. ex: ["annotation_key_1:value1", "annotation_key_2:value2"]
